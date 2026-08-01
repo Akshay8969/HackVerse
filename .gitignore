@@ -1,4 +1,7 @@
 
+# Instructions folder (do not push)
+Instructions/
+
 # Dependencies
 node_modules/
 client/node_modules/
