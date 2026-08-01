@@ -7,8 +7,8 @@ A full-stack **MERN** web application for organizing, managing, participating in
 ## 🌐 Live Demo & Deployment
 
 - **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app) ✅ Live
-- **Backend API**: [https://hackverse-api.onrender.com](https://hackverse-api.onrender.com) *(deploying)*
-- **API Health Check**: [https://hackverse-api.onrender.com/api/health](https://hackverse-api.onrender.com/api/health)
+- **Backend API**: [https://hackverse-api.vercel.app](https://hackverse-api.vercel.app) ✅ Live
+- **API Health Check**: [https://hackverse-api.vercel.app/api/health](https://hackverse-api.vercel.app/api/health)
 
 ### 🔑 Demo Accounts
 
@@ -79,24 +79,20 @@ HackVerse/
 
 ## 🚢 Deploy to Production
 
-### Option A — Render (One Click)
+Both services are deployed on **Vercel** (free tier):
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Akshay8969/HackVerse)
+| Service | URL |
+|---------|-----|
+| Frontend | https://hackverse-app.vercel.app |
+| Backend API | https://hackverse-api.vercel.app |
 
-Set these env vars in the Render dashboard:
-| Variable | Value |
-|----------|-------|
-| `MONGO_URI` | Your MongoDB Atlas URI |
-| `JWT_SECRET` | A long random secret string |
-| `JWT_EXPIRE` | `7d` |
-| `NODE_ENV` | `production` |
-| `CLIENT_URL` | `https://hackverse-app.vercel.app` |
+### Redeploy
+```bash
+# Frontend
+cd client && npx vercel --prod --yes
 
-### Option B — Fly.io (CLI)
-
-```powershell
-# Run deploy-backend.ps1 in your terminal
-.\deploy-backend.ps1
+# Backend
+cd server && npx vercel --prod --yes
 ```
 
 ---
