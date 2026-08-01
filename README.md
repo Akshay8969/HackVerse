@@ -4,6 +4,23 @@ A full-stack **MERN** web application for organizing, managing, participating in
 
 ---
 
+## 🌐 Live Demo & Deployment
+
+- **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app)
+- **Backend API**: [https://hackverse-api.onrender.com](https://hackverse-api.onrender.com)
+- **API Health Check**: [https://hackverse-api.onrender.com/api/health](https://hackverse-api.onrender.com/api/health)
+
+### 🔑 Demo Accounts
+
+| Role | Email | Password |
+|------|-------|----------|
+| **Admin** | `admin@hackverse.io` | `Admin123!` |
+| **Organizer** | `organizer@hackverse.io` | `Organizer123!` |
+| **Participant** | `participant@hackverse.io` | `Participant123!` |
+| **Judge** | `judge@hackverse.io` | `Judge123!` |
+
+---
+
 ## 🚀 Tech Stack
 
 | Layer | Technology |
