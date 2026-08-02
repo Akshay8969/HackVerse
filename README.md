@@ -55,11 +55,36 @@ HackVerse/
 │   ├── routes/              # Express routers (9 route files)
 │   ├── utils/               # generateToken.js
 │   └── server.js            # App entry point
+├── screenshots/             # Platform application screenshots
+│   ├── home.png
+│   ├── dashboard.png
+│   ├── profile.png
+│   ├── login.png
+│   └── signup.png
 ├── project_report.md        # Full project report
 ├── db_schema.md             # Database schema documentation
 ├── api_documentation.md     # REST API documentation
 └── README.md
 ```
+
+---
+
+## 📸 Application Screenshots
+
+### 🏠 Landing Page
+![Landing Page](./screenshots/home.png)
+
+### 📊 Participant Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### 👤 User Profile & Settings
+![Profile](./screenshots/profile.png)
+
+### 🔐 User Sign In
+![Sign In](./screenshots/login.png)
+
+### 📝 User Registration
+![Sign Up](./screenshots/signup.png)
 
 ---
 
