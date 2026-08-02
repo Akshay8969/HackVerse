@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://hackverse-api.vercel.app/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://hackverse-1vym.onrender.com/api',
   withCredentials: true,
 });
 
