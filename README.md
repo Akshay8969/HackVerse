@@ -6,9 +6,9 @@ A full-stack **MERN** web application for organizing, managing, participating in
 
 ## 🌐 Live Demo & Deployment
 
-- **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app) 
-- **Backend API**: [https://hackverse-api.vercel.app](https://hackverse-api.vercel.app) 
-- **API Health Check**: [https://hackverse-api.vercel.app/api/health](https://hackverse-api.vercel.app/api/health)
+- **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app) ✅ Live
+- **Backend API**: [https://hackverse-1vym.onrender.com](https://hackverse-1vym.onrender.com) ✅ Live
+- **API Health Check**: [https://hackverse-1vym.onrender.com/api/health](https://hackverse-1vym.onrender.com/api/health)
 
 ### 🔑 Demo Accounts
 
@@ -25,7 +25,7 @@ A full-stack **MERN** web application for organizing, managing, participating in
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | React 18 + Vite, React Router v6, Tailwind CSS v4, Axios |
+| Frontend | React 18 + Vite, React Router v6, Vanilla CSS, Axios |
 | State | React Context API |
 | Backend | Node.js + Express.js |
 | Database | MongoDB + Mongoose |
@@ -38,19 +38,27 @@ A full-stack **MERN** web application for organizing, managing, participating in
 
 ```
 HackVerse/
-├── client/          # React frontend (Vite)
+├── client/                  # React frontend (Vite)
+│   ├── public/
 │   └── src/
-│       ├── components/    # Reusable UI components
-│       ├── context/       # AuthContext
-│       ├── layouts/       # MainLayout
-│       ├── pages/         # All pages + dashboards
-│       └── services/      # Axios API calls
-└── server/          # Express backend
-    ├── config/      # MongoDB connection
-    ├── controllers/ # Business logic
-    ├── middleware/  # Auth, error handler
-    ├── models/      # Mongoose schemas
-    └── routes/      # Express routes
+│       ├── components/      # Reusable UI components
+│       │   └── common/      # Navbar, Footer, Loader, RouteGuards
+│       ├── context/         # AuthContext (global auth state)
+│       ├── layouts/         # MainLayout wrapper
+│       ├── pages/           # All pages + role dashboards
+│       └── services/        # Axios API service layer
+├── server/                  # Node.js + Express backend
+│   ├── config/              # MongoDB connection (db.js)
+│   ├── controllers/         # Business logic per resource
+│   ├── middleware/          # auth.js, errorHandler.js
+│   ├── models/              # Mongoose schemas (6 models)
+│   ├── routes/              # Express routers (9 route files)
+│   ├── utils/               # generateToken.js
+│   └── server.js            # App entry point
+├── project_report.md        # Full project report
+├── db_schema.md             # Database schema documentation
+├── api_documentation.md     # REST API documentation
+└── README.md
 ```
 
 ---
@@ -77,23 +85,30 @@ HackVerse/
 
 ---
 
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [project_report.md](./project_report.md) | Full project report — architecture, features, tech stack, deployment |
+| [db_schema.md](./db_schema.md) | MongoDB schema for all 6 collections with field types and indexes |
+| [api_documentation.md](./api_documentation.md) | REST API reference — all 45+ endpoints with request/response examples |
+
+---
+
 ## 🚢 Deploy to Production
 
-Both services are deployed on **Vercel** (free tier):
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Vercel | https://hackverse-app.vercel.app |
+| Backend API | Render | https://hackverse-1vym.onrender.com |
 
-| Service | URL |
-|---------|-----|
-| Frontend | https://hackverse-app.vercel.app |
-| Backend API | https://hackverse-api.vercel.app |
-
-### Redeploy
+### Redeploy Frontend
 ```bash
-# Frontend
-cd client && npx vercel --prod --yes
-
-# Backend
-cd server && npx vercel --prod --yes
+cd client && npx vercel --prod --force
 ```
+
+### Redeploy Backend
+Push to `main` — Render auto-deploys on every push.
 
 ---
 
