@@ -6,8 +6,8 @@ A full-stack **MERN** web application for organizing, managing, participating in
 
 ## 🌐 Live Demo & Deployment
 
-- **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app) ✅ Live
-- **Backend API**: [https://hackverse-api.vercel.app](https://hackverse-api.vercel.app) ✅ Live
+- **Frontend App**: [https://hackverse-app.vercel.app](https://hackverse-app.vercel.app) 
+- **Backend API**: [https://hackverse-api.vercel.app](https://hackverse-api.vercel.app) 
 - **API Health Check**: [https://hackverse-api.vercel.app/api/health](https://hackverse-api.vercel.app/api/health)
 
 ### 🔑 Demo Accounts
